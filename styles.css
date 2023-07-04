@@ -55,3 +55,7 @@ body {
     color: #ffc300;
     size: 10px;
 }
+
+.btn:hover {
+    font-weight: bold;
+  }
