@@ -1,28 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tahmeed Ahmed</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tahmeed Ahmed</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: black;
+    }
 
-  <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-8 col-lg-8">
-                UNDER CONSTRUCTION
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                STOP LOOKING AT IT
-            </div>       
-        </div>
+    .navbar-nav {
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .navbar-nav .nav-item {
+      margin-right: 15px;
+    }
+
+    .navbar-nav .nav-link {
+      position: relative;
+    }
+
+    .navbar-nav .nav-link::before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: transparent;
+      transition: background-color 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover::before {
+      background-color: lightgray;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1 fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-secondary" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="https://github.com/ChaoticCross12" target="_blank">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary"
+              href="https://cometmail-my.sharepoint.com/:b:/g/personal/mta180003_utdallas_edu/EUAPBqJy4-ZKkRc7eMaTy4gBR9JTq1xKnnZwJn6vRHshAQ?e=RZikzt"
+              target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-8 col-lg-8">
+        UNDER CONSTRUCTION
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        STOP LOOKING AT IT
+      </div>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-  </body>
+</body>
 
 </html>
