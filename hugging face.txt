@@ -1,0 +1,14 @@
+Hello,
+I am an aspiring software engineer with a passion for open-source development and machine learning. I love the idea of working on impactful projects in a fast-paced environment. My love for technology has paved my career thus far and I have had the opportunity to grow as a software engineer through internships at Amazon, NCR, and Jewelers Mutual.
+I came across Hugging Face when looking into emerging AI companies and I strongly aligned with the open-source philosophy that the company has. I believe I would be a good fit and more importantly, really enjoy working at a company that approaches problems in the way hugging face does.
+
+
+I am applying to work at Hugging Face because I have a strong interest in Machine Learning. I want to contribute to paving the way for people to build ML-based projects with ease and I believe I can do that in the most impactful way at Hugging Face. I am a strong believer in open-source technology as well, which is why I appreciate how Hugging Face is developing its tools.
+If hired, the team can expect me to be a fast learner and I would be passionate to take on new challenges in the space. I have accumulated research experience in the field of Reinforcement Learning, and LLMs, and have developed my Software Engineering skills through internships at Amazon, NCR, and Jewelers Mutual. I have also taught myself about the Machine Learning space through multiple personal projects.
+
+I have worked on multiple projects but the ones that I am proud of the most are -
+1. Developed a Real-time sign language translator for video calling. (Hosted workshop on this at university)
+2. Contributed to CI/CD pipeline for AWS Amplify CLI. (Open source project hosted by AWS)
+3. Developed a contactless healthcare platform for my community during the beginning of the pandemic. (Winner of Square, now Block, small business hackathon)
+4. Built OCR engine to identify car number plates. (Hosted at university to introduce freshmen to Machine Learning)
+
