@@ -129,16 +129,30 @@ body {
     animation: typing 3s steps(20, end), blink 0.75s step-end infinite;
     white-space: nowrap;
     overflow: hidden;
+    display: inline-block;
+    max-width: 100%;
+    animation-fill-mode: forwards;
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from { 
+        width: 0;
+        max-width: 0;
+    }
+    to { 
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 @keyframes blink {
     from, to { border-color: transparent; }
     50% { border-color: var(--primary-color); }
+}
+
+/* Ensure animation plays on page load */
+.hero-name.typing-animation {
+    animation: typing 3s steps(20, end), blink 0.75s step-end infinite;
 }
 
 .hero-title {
@@ -285,11 +299,26 @@ body {
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s ease;
+    will-change: opacity, transform;
 }
 
 .fade-in-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Fallback: show elements after a delay if JS doesn't load */
+@media (prefers-reduced-motion: no-preference) {
+    .fade-in-on-scroll {
+        animation: fadeInFallback 0.6s ease 1s forwards;
+    }
+}
+
+@keyframes fadeInFallback {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Sections */
