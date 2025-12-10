@@ -4,168 +4,408 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tahmeed Ahmed</title>
+    <title>Meah Tahmeed Ahmed | Researcher</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <div>
-        <!-- Navbar -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 fixed-top">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav flex-column flex-lg-row">
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary" href="#">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary" href="#">Notes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary" href="https://github.com/ChaoticCross12"
-                                    target="_blank">Github</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary"
-                                    href="https://cometmail-my.sharepoint.com/:b:/g/personal/mta180003_utdallas_edu/EUAPBqJy4-ZKkRc7eMaTy4gBR9JTq1xKnnZwJn6vRHshAQ?e=RZikzt"
-                                    target="_blank">Resume</a>
-                            </li>
+            <a class="navbar-brand" href="#home">MTA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="animated-bg"></div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="hero-content">
+                        <h1 class="hero-greeting fade-in">Hello, I'm</h1>
+                        <h1 class="hero-name typing-animation">Meah Tahmeed Ahmed</h1>
+                        <p class="hero-title fade-in-delay-1">PhD Candidate in Computer Science | Software Security Researcher</p>
+                        <p class="hero-subtitle fade-in-delay-2">University of Texas at Dallas</p>
+                        <div class="hero-buttons fade-in-delay-3">
+                            <a href="#research" class="btn btn-primary-custom">View Research</a>
+                            <a href="#contact" class="btn btn-outline-custom">Get in Touch</a>
+                        </div>
+                        <div class="hero-social fade-in-delay-4">
+                            <a href="https://github.com/ChaoticCross12" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/meah-ahmed" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://scholar.google.com/citations?user=lqn3Vo0AAAAJ&hl=en" target="_blank" class="social-link"><i class="bi bi-mortarboard"></i></a>
+                            <a href="mailto:meah.ahmed@utdallas.edu" class="social-link"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-card fade-in-on-scroll">
+                        <h3>Education</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>PhD in Computer Science</h4>
+                                <p class="text-muted">University of Texas at Dallas</p>
+                                <p>Focus: Software Security | Expected: Dec 2026</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>B.S & M.S. in Computer Science</h4>
+                                <p class="text-muted">University of Texas at Dallas</p>
+                                <p>Concentration: AI and Security | Minor: Business Intelligence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-card fade-in-on-scroll">
+                        <h3>Research Interests</h3>
+                        <div class="interests-grid">
+                            <div class="interest-item">
+                                <i class="bi bi-shield-check"></i>
+                                <span>Fuzz Testing</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="bi bi-lock"></i>
+                                <span>Software Security</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="bi bi-link-45deg"></i>
+                                <span>Blockchain</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="bi bi-code-square"></i>
+                                <span>Static Analysis</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="bi bi-cpu"></i>
+                                <span>Artificial Intelligence</span>
+                            </div>
+                        </div>
+                        <h3 class="mt-4">Skills</h3>
+                        <div class="skills-container">
+                            <div class="skill-category">
+                                <strong>Languages:</strong>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">C/C++</span>
+                                    <span class="skill-tag">Rust</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">TypeScript</span>
+                                    <span class="skill-tag">Golang</span>
+                                    <span class="skill-tag">Solidity</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <strong>Frameworks:</strong>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">Vue</span>
+                                    <span class="skill-tag">Angular</span>
+                                    <span class="skill-tag">Django</span>
+                                    <span class="skill-tag">Flask</span>
+                                    <span class="skill-tag">PyTorch</span>
+                                    <span class="skill-tag">TensorFlow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="achievements-grid fade-in-on-scroll">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">🏆</div>
+                            <h4>Best Student Paper Award</h4>
+                            <p>DBSEC 2025</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">🥇</div>
+                            <h4>1st Place</h4>
+                            <p>International Blockchain Olympiad 2022</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">🎓</div>
+                            <h4>Computing Scholar</h4>
+                            <p>UTD Competitive CS Honors Program</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">📚</div>
+                            <h4>Dean's List</h4>
+                            <p>Academic Excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section-padding bg-dark">
+        <div class="container">
+            <h2 class="section-title text-white">Research & Publications</h2>
+            <div class="publications-container">
+                <div class="publication-card fade-in-on-scroll">
+                    <div class="publication-badge">Submitted</div>
+                    <h3>Variability Aware Fuzzing</h3>
+                    <p class="authors"><strong>Meah Tahmeed Ahmed</strong>, Arnab Dev, Shiyi Wei</p>
+                    <p class="venue">International Conference on Software Engineering (ICSE), 2026</p>
+                </div>
+                <div class="publication-card fade-in-on-scroll">
+                    <div class="publication-badge">Under Review</div>
+                    <h3>Empirical Study of Static Analysis-Based Variability Bug Detection</h3>
+                    <p class="authors">Austin Mordahl, Zachary Patterson, Mohammad Rafieian, <strong>Meah Tahmeed Ahmed</strong>, Paul Gazzillo, Shiyi Wei</p>
+                    <p class="venue">International Conference on Software Testing, Verification and Validation (ICST), 2026</p>
+                </div>
+                <div class="publication-card fade-in-on-scroll">
+                    <div class="publication-badge">Under Review</div>
+                    <h3>Evaluating Fuzzing Mechanisms Using Internal State Variables</h3>
+                    <p class="authors">Meah Tahmeed Ahmed, Zenong Zhang, Shiyi Wei</p>
+                    <p class="venue">International Conference on Software Testing, Verification and Validation (ICST), 2026</p>
+                </div>
+                <div class="publication-card fade-in-on-scroll highlight-publication">
+                    <div class="publication-badge award">Best Student Paper</div>
+                    <h3><a href="https://link.springer.com/chapter/10.1007/978-3-031-96590-6_7" target="_blank" class="publication-link">Hallucination Detection in Large Language Models Using Diversion Decoding</a></h3>
+                    <p class="authors">Basel Abdeen, S. M. Tahmid Siddiqui, <strong>Meah Tahmeed Ahmed</strong>, Anoop Singhal, Latifur Khan, Punya Parag Modi, Ehab Al-Shaer</p>
+                    <p class="venue">Data and Applications Security and Privacy (DBSEC), Gjovik, Norway, 2026</p>
+                    <p class="doi">doi: 10.1007/978-3-031-96590-6_7</p>
+                </div>
+                <div class="publication-card fade-in-on-scroll">
+                    <div class="publication-badge">Published</div>
+                    <h3><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11039273" target="_blank" class="publication-link">HealthChain: A Blockchain-Based Framework for Health Record Management System</a></h3>
+                    <p class="authors">Mashiat Amin Farin, Sampad Sikder, Ashabul Yamin Raad, <strong>Meah Tahmeed Ahmed</strong>, Tahlil Tahlil</p>
+                    <p class="venue">Workshop on Emerging Trends in Software Engineering for Blockchain (WETSEB), 2025</p>
+                    <p class="doi">doi: 10.1109/WETSEB66605.2025.00010</p>
+                </div>
+                <div class="publication-card fade-in-on-scroll">
+                    <div class="publication-badge">Published</div>
+                    <h3><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10634338" target="_blank" class="publication-link">Unlocking DeFi Literacy: Understanding NFT Market Microstructure in the Decentralized Finance Landscape</a></h3>
+                    <p class="authors">Sampad Sikder, Mashiat Aamin Farin, Md Ariful Islam, Tahlil Tahlil, <strong>Meah Tahmeed Ahmed</strong></p>
+                    <p class="venue">IEEE International Conference on Blockchain and Cryptocurrency (ICBC), Dublin, Ireland, 2024</p>
+                    <p class="doi">doi: 10.1109/ICBC59979.2024.10634338</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-line"></div>
+                <div class="experience-item fade-in-on-scroll">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Graduate Research Assistant</h3>
+                            <span class="experience-date">Aug 2023 - Present</span>
+                        </div>
+                        <p class="experience-company">University of Texas at Dallas</p>
+                        <ul class="experience-details">
+                            <li>Invented a data and configuration co-execution algorithm to integrate variability-aware execution and analysis to fuzz testing</li>
+                            <li>Mentored 5 masters and undergraduate student researchers in projects related to fuzz testing and configuration generation</li>
+                            <li>Lectured in undergraduate and masters courses to teach about compiler design and software maintenance</li>
+                            <li>Discovered vulnerabilities in commonly used open source software across domains such as C libraries, browsers, networks</li>
                         </ul>
                     </div>
                 </div>
-            </nav>            
-            
-            
-        </div>
-        
-        <!-- Home -->
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-12 col-lg-10 pt-5 mt-5  justify-content-center align-items-stretch">
-                    <div class="py-lg-5 py-sm-0 my-lg-5 my-sm-0 px-4 text-white justify-content-center">
-                        <div class="row display-4">
-                            <div>Hello :) I am</div>
+                <div class="experience-item fade-in-on-scroll">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Software Development Engineer Intern</h3>
+                            <span class="experience-date">May 2023 - Aug 2023</span>
                         </div>
-                        <div class="row display-1 text-center">
-                            <div>Meah Tahmeed Ahmed</div>
-                        </div>
-                        <div class="row text-center py-5">
-                            <div class="details">
-                                I am an aspiring Software Engineer with a passion for
-                                Reinforcement Learning and Computer Vision which drives me to
-                                explore new ways to solve complex problems. I am a strong believer in the power
-                                of open-source software and love contributing to projects that
-                                make a difference. Join me on my journey as I continue to
-                                learn, grow, and innovate in the world of technology.
-                            </div>
-                        </div>
-                        <div class="row text-center pt-5 mt-5">
-                            <div class="sub-details">
-                                The purpose of this website is to share my notes,
-                                projects, and my experience on working with different
-                                technologies. If something here helps you, feel free to use it!
-                            </div>
-                        </div>
+                        <p class="experience-company">Amazon Web Services</p>
+                        <ul class="experience-details">
+                            <li>Improved CI/CD pipeline for AWS Amplify CLI tool using AWS CloudWatch and TypeScript, saving $5,000 per month</li>
+                            <li>Migrated end-to-end tests to AWS CodeBuild, achieving 90% code coverage while increasing testing speed by 40%</li>
+                            <li>Executed APIs using AWS Lambda for data collection to retrieve build information and test results, saving 4 hours per week</li>
+                        </ul>
                     </div>
-                    <div class="container">
-                        <div class="row">
-                            <button type="button" class="btn">
-                                <div class="row text-center">
-                                    <div class="footer">
-                                        Have a look at my projects
-                                    </div>
-                                </div>
-                                <div class="row text-center">
-                                    <div class="arrow-down">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                            fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
+                </div>
+                <div class="experience-item fade-in-on-scroll">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Software Development Engineer Intern</h3>
+                            <span class="experience-date">Aug 2022 - Dec 2022</span>
                         </div>
+                        <p class="experience-company">Amazon.com Inc</p>
+                        <ul class="experience-details">
+                            <li>Designed React (TypeScript) webapp to configure resources for all team owned APIs, reducing time cost by 15 hours each sprint</li>
+                            <li>Developed APIs via AWS Lambda using Java to automate data collection and analysis for more efficient resource allocation</li>
+                            <li>Automated resource allocation for all dependencies upon update of an API's resources, reducing ticket count by 5% each sprint</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item fade-in-on-scroll">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Software Engineer Intern</h3>
+                            <span class="experience-date">May 2022 - Aug 2022</span>
+                        </div>
+                        <p class="experience-company">NCR Corporation</p>
+                        <ul class="experience-details">
+                            <li>Deployed testing suite for POS application (Xamarin, C#, .NET) to auto-generate testcases, reducing testing time by 15% per sprint</li>
+                            <li>Initiated auto UI testing scheduler into CI/CD pipeline, reducing workload by 20% per testing session for each QA tester</li>
+                            <li>Refactored legacy code with multiprocessing Python and Bash scripts in internal hypervisors for faster test environment setup</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item fade-in-on-scroll">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Research Assistant</h3>
+                            <span class="experience-date">Aug 2021 - Dec 2022</span>
+                        </div>
+                        <p class="experience-company">Big Data Analytics and Management Lab at UT Dallas</p>
+                        <ul class="experience-details">
+                            <li>Analyzed large datasets of political tweets to pre-train and finetune BERT model to identify bias creating political actors</li>
+                            <li>Adapted web crawler using Python to extract data of different cyber security attack techniques from the MITRE repository</li>
+                            <li>Simulated IBM Sysflow to collect data on security attacks of controlled vulnerabilities on Docker containers</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Projects -->
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-dark">
         <div class="container">
+            <h2 class="section-title text-white">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in-on-scroll">
+                    <div class="project-icon">🧪</div>
+                    <h3>Variability-Aware Fuzz Testing</h3>
+                    <p class="project-tech">C, Rust, Python</p>
+                    <p class="project-description">Invented a run-time variability-aware fuzzer to test configurable C programs to detect vulnerabilities. Developed a configuration and input co-execution algorithm to analyze and execute programs at 4000 executions per second.</p>
+                    <div class="project-highlight">Discovered and fixed multiple security vulnerabilities in popular open-source C programs, including ffmpeg, xmllint, and tiff2pdf.</div>
+                </div>
+                <div class="project-card fade-in-on-scroll">
+                    <div class="project-icon">🤖</div>
+                    <h3>LLM Hallucination Detection Algorithm</h3>
+                    <p class="project-tech">Python, Hugging Face, Llama 7B & 13B</p>
+                    <p class="project-description">Created a semantic-aware hallucination detection algorithm for LLMs leveraging diversion-decoding and cosine similarity. Compared algorithm to current best approaches using the Trivia QA dataset.</p>
+                    <div class="project-highlight">Achieved 78.49% accuracy, beating all current approaches.</div>
+                </div>
+                <div class="project-card fade-in-on-scroll">
+                    <div class="project-icon">📈</div>
+                    <h3>StockGPT: Stock Market Analysis Chatbot</h3>
+                    <p class="project-tech">Python, GPT 3.5 Turbo, Google Search API, Flask</p>
+                    <p class="project-description">Applied prompt engineering to GPT 3.5 model to respond to real-time stock market questions. Integrated web scraping Python scripts and Google Search API to generate market training dataset with over 200,000 entries.</p>
+                    <div class="project-highlight">90% success rate, currently used by 20+ investors.</div>
+                </div>
+                <div class="project-card fade-in-on-scroll">
+                    <div class="project-icon">🔗</div>
+                    <h3>Decentralized Health Ledger</h3>
+                    <p class="project-tech">Solidity, Hyperledger Firefly, React</p>
+                    <p class="project-description">Led a team of 4 to formulate system design for a scalable blockchain based distributed health ledger for 200,000 patients. Built user interface using React and smart contracts using IBM's Hyperledger Firefly.</p>
+                    <div class="project-highlight">1st Place - International Blockchain Olympiad 2022 (Healthcare domain)</div>
+                </div>
+                <div class="project-card fade-in-on-scroll">
+                    <div class="project-icon">✋</div>
+                    <h3>Sign Language Translator</h3>
+                    <p class="project-tech">MediaPipe, Keras, Tensorflow, OpenCV, Python, Django</p>
+                    <p class="project-description">Led a team of 3 to devise a Django webapp that converts sign language to text in real-time video to help people with disabilities. Created CNN model using Keras (TensorFlow) and Google MediaPipe.</p>
+                    <div class="project-highlight">90.8% accuracy in identifying hand signs from video.</div>
+                </div>
+                <div class="project-card fade-in-on-scroll">
+                    <div class="project-icon">🎓</div>
+                    <h3>Solace: Online Education Platform</h3>
+                    <p class="project-tech">NextJS, Python, Cloudflare, Firestore, Vercel, TailwindCSS</p>
+                    <p class="project-description">Launched online student dashboard with Next.JS and TailwindCSS, currently deployed using Vercel. Implemented UT Dallas course system to student dashboard allowing generation of over 100 course specific communities.</p>
+                    <div class="project-highlight">Currently used by 500+ students.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
             <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-12 col-lg-10 pt-5 mt-5  justify-content-center align-items-stretch">
-                    <div class="py-lg-5 py-sm-0 my-lg-5 my-sm-0 px-4 text-white justify-content-center">
-                        <div class="row display-4">
-                            <div>Hello :) I am</div>
+                <div class="col-lg-8 text-center">
+                    <p class="contact-intro fade-in-on-scroll">I'm always open to discussing research collaborations, opportunities, or just having a conversation about software security and fuzz testing!</p>
+                    <div class="contact-info fade-in-on-scroll">
+                        <div class="contact-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:meah.ahmed@utdallas.edu">meah.ahmed@utdallas.edu</a>
                         </div>
-                        <div class="row display-1 text-center">
-                            <div>Meah Tahmeed Ahmed</div>
+                        <div class="contact-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:+19402793195">(940) 279-3195</a>
                         </div>
-                        <div class="row text-center py-5">
-                            <div class="details">
-                                I am an aspiring Software Engineer with a passion for
-                                Reinforcement Learning and Computer Vision which drives me to
-                                explore new ways to solve complex problems. I am a strong believer in the power
-                                of open-source software and love contributing to projects that
-                                make a difference. Join me on my journey as I continue to
-                                learn, grow, and innovate in the world of technology.
-                            </div>
+                        <div class="contact-item">
+                            <i class="bi bi-github"></i>
+                            <a href="https://github.com/ChaoticCross12" target="_blank">ChaoticCross12</a>
                         </div>
-                        <div class="row text-center pt-5 mt-5">
-                            <div class="sub-details">
-                                The purpose of this website is to share my notes,
-                                projects, and my experience on working with different
-                                technologies. If something here helps you, feel free to use it!
-                            </div>
+                        <div class="contact-item">
+                            <i class="bi bi-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/meah-ahmed" target="_blank">meah-ahmed</a>
                         </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <button type="button" class="btn">
-                                <div class="row text-center">
-                                    <div class="footer">
-                                        Have a look at my projects
-                                    </div>
-                                </div>
-                                <div class="row text-center">
-                                    <div class="arrow-down">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                            fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
+                        <div class="contact-item">
+                            <i class="bi bi-mortarboard"></i>
+                            <a href="https://scholar.google.com/citations?user=lqn3Vo0AAAAJ&hl=en" target="_blank">Google Scholar</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container text-center">
+            <p>&copy; 2025 Meah Tahmeed Ahmed. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
     </script>
-    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
